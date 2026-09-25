@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Management & AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Document Management & AI Assistant</h1>
+        <p>Upload documents and ask questions about them.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Upload Document</h2>
+
+            <div class="upload-area">
+                <input
+                    type="file"
+                    id="documentFile"
+                    accept=".txt,.md,.json"
+                >
+
+                <button id="uploadButton">
+                    Upload
+                </button>
+            </div>
+
+            <p id="uploadStatus"></p>
+        </section>
+
+
+        <section class="card">
+            <h2>Documents</h2>
+
+            <div id="documentsList">
+                <p>Loading documents...</p>
+            </div>
+        </section>
+
+
+        <section class="card">
+            <h2>Ask Your Documents</h2>
+
+            <textarea
+                id="questionInput"
+                placeholder="Ask a question about your uploaded documents..."
+                rows="4"
+            ></textarea>
+
+            <button id="askButton">
+                Ask
+            </button>
+
+            <div id="chatResult"></div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
