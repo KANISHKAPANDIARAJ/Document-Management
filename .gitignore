@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded/generated files
+uploads/
+storage/
+data/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing/cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
